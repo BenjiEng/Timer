@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="scalable.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  	<script src="scalable.js"></script>
+	</head>
+	<div class="holder">
+		<div class="timeholder">
+			<div class="timeValue" id="days">0</div>
+			Days
+		</div>
+		<div class="timeholder">
+			<div class="timeValue" id="hours">0</div>
+			Hours
+		</div>
+		<div class="timeholder">
+			<div class="timeValue" id="minutes">0</div>
+			Minutes
+		</div>
+		<div class="timeholder">
+			<div class="timeValue" id="seconds">0</div>
+			Seconds
+		</div>
+	</div>
+<script>
+	$(function() {
+	  initialize($("#days"), $("#hours"), $("#minutes"), $("#seconds"));
+	});
+</script>
+</html>
